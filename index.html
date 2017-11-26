@@ -189,7 +189,7 @@
     <script src="js/freelancer.min.js"></script>
 	<script type="text/javascript">
   
-	var content = "";
+	var content = document.getElementById("content").value;
 	var b_g = "";
 	var food = "";
 		function SendScore() {
@@ -205,8 +205,8 @@
 				alert("電話");
 				return;
 			}
-			if(document.getElementById("content").value == ""){
-				content = "null";
+			if(	content == ""){
+				content = "沒填";
 			}
 			if (document.getElementById('meet').checked) {
 				 food ="葷";
