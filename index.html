@@ -280,11 +280,12 @@
 				yn = "否";
 			}
 			var data = {};
+			
 			data.name = document.getElementById("name").value;
 			data.people = document.getElementById("people").value;
 			data.phone = document.getElementById("phone").value;
 			data.food = food;
-			data.content = content;
+			data.content = content+"/"+yn;
 			data.b_g = b_g;
 			data.yn = yn;
 			
