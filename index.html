@@ -20,7 +20,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/freelancer.css" rel="stylesheet">
-
+<link href="css/slick.css" rel="stylesheet">
   </head>
 
   <body id="page-top">
@@ -50,17 +50,31 @@
     </nav>
 
     <!-- Header -->
-    <header class="masthead">
+    <div class="slick">
+    <header class="masthead" style=" background-image: url('./img/heder.jpg');     background-repeat: no-repeat;   background-position:   top;  
+    background-size: 100%;    font-weight: bold;">
+      <div class="container">
+        <img class="img-fluid" src="" alt="">
+        <div class="intro-text">
+          <span class="name">Mr.朱&Mrs.林</span>
+           
+          <h2 class="skills">希望邀請你/妳來參加我們的婚禮</h2>
+        </div>
+      </div>
+    </header>
+    <!--  -->
+        <header class="masthead" style=" background-image: url('./img/about.jpg');     background-repeat: no-repeat;   background-position:   top;  
+    background-size: 100% ;color:black;    font-weight: bold;">
       <div class="container">
         <img class="img-fluid" src="img/profile.png" alt="">
         <div class="intro-text">
           <span class="name">Mr.朱&Mrs.林</span>
-          <hr class="star-light">
-          <span class="skills">希望邀請你/妳來參加我們的婚禮</span>
+           
+          <p class="skills">希望邀請你/妳來參加我們的婚禮</p>
         </div>
       </div>
     </header>
-
+</div>
     <!-- Portfolio Grid Section -->
     <section id="portfolio">
       <div class="container" style=" text-align: center;">
@@ -74,8 +88,8 @@
     </section>
 
     <!-- About Section -->
-    <section class="success" id="about">
-      <div class="container" style=" text-align: center;">
+    <section class="success" id="about"  > 
+      <div class="container" style=" text-align: center; font-weight:bold;">
         <h2 class="text-center">About</h2>
         <hr class="star-light">
             <p>親愛的朋友</p>
@@ -89,7 +103,8 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact"  style=" background-image: url('./img/background.jpg');     background-repeat:  repeat;   background-position:   top;  
+    background-size: 100% ;color:black" >
       <div class="container">
         <h2 class="text-center">Join!</h2>
         <hr class="star-primary">
@@ -184,14 +199,24 @@
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
-
+  <script src="js/slick.js"></script>
     <!-- Custom scripts for this template -->
     <script src="js/freelancer.min.js"></script>
 	<script type="text/javascript">
   
+	  $(document).ready(function(){
+	      $('.slick').slick({
+	    	  autoplay: true,
+	    	  autoplaySpeed: 3000,
+	      });
+	      $(".slick-next").hide();
+	  });
+	  
+	  
 	var content = document.getElementById("content").value;
 	var b_g = "";
 	var food = "";
+	
 		function SendScore() {
 			if(document.getElementById("name").value == ""){
 				alert("請填寫姓名");
@@ -202,7 +227,7 @@
 				return;
 			}
 			if(document.getElementById("phone").value == ""){
-				alert("電話");
+				alert("請填寫電話");
 				return;
 			}
 			if(	content == ""){

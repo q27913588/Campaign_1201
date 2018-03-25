@@ -160,7 +160,7 @@ section.success {
 
 header.masthead {
   padding-top: 100px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   text-align: center;
   color: white;
   background: #18BC9C; }
@@ -179,8 +179,8 @@ header.masthead {
 
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 200px;
-    padding-bottom: 100px; }
+    padding-top: 300px;
+    padding-bottom: 150px; }
     header.masthead .intro-text .name {
       font-size: 4.75em; }
     header.masthead .intro-text .skills {
