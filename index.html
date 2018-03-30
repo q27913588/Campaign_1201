@@ -231,7 +231,7 @@
 			$(".slick-next").hide();
 		});
 
-		var content = document.getElementById("content").value;
+	
 		var b_g = "";
 		var food = "";
 		var yn = "";
@@ -270,7 +270,9 @@
 				yn = "否";
 			}
 			var data = {};
-			
+			var content = $('#content').val();
+			alert(content);
+		
 			data.name = document.getElementById("name").value;
 			data.people = document.getElementById("people").value;
 			data.phone = document.getElementById("phone").value;
