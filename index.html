@@ -152,10 +152,12 @@
 
 							<label style="font-size: 1.5em">葷素</label>
 							<div>
-								<label class="radio-inline" style="color: #212529;"> <input
+								<label class="radio-inline" style="color: #212529;"> 
+								<input
 									type="radio" name="optradio" style="margin: 5px;" id="meet"
 									checked="checked">葷
-								</label> <label class="radio-inline" style="color: #212529;"> <input
+								</label> <label class="radio-inline" style="color: #212529;">
+								 <input
 									type="radio" name="optradio" style="margin: 5px;" id="veg">素
 								</label>
 							</div>
@@ -171,7 +173,8 @@
 								<label class="radio-inline" style="color: #212529;"> <input
 									type="radio" name="optradio1" style="margin: 5px;" id="boy"
 									checked="checked">男方親友
-								</label> <label class="radio-inline" style="color: #212529;"> <input
+								</label> 
+								<label class="radio-inline" style="color: #212529;"> <input
 									type="radio" name="optradio1" style="margin: 5px;" id="girl">女方親友
 								</label>
 							</div>
@@ -235,6 +238,7 @@
 		var b_g = "";
 		var food = "";
 		var yn = "";
+		
 		function SendScore() {
 			if (document.getElementById("name").value == "") {
 				alert("請填寫姓名");
@@ -255,7 +259,7 @@
 				food = "葷";
 			}
 			if (document.getElementById('veg').checked) {
-				food = "葷";
+				food = "素";
 			}
 			if (document.getElementById('boy').checked) {
 				b_g = "男方親友";
