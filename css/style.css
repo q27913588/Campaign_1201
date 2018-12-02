@@ -14,6 +14,11 @@
     width: 1140px;
     margin-bottom: 50px;
 }
+.ad{
+    min-height: 500px;
+    margin-top: 50px;
+}
+
 .hr-model{
     height: 13px;
    background: url("../img/hr.png") no-repeat center center;
