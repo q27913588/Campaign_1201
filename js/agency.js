@@ -70,6 +70,16 @@
       vid.pause(); 
   });
 
+  $( "#travel" ).click(function() { 
+    $("#travel-page").show()
+    $("#hotel-page").hide()
+    
+  } );
+  
+  $( "#hotel" ).click(function() { 
+    $("#travel-page").hide()
+    $("#hotel-page").show()
+  });
 
 })(jQuery); // End of use strict
 
