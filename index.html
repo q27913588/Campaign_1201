@@ -56,6 +56,9 @@
             <a class="nav-link" data-toggle="modal" href="#portfolioModal1">諮詢表單</a>
           </li>
           <li class="nav-item">
+              <a class="nav-link" data-toggle="modal" href="#portfolioModal5">FAQ</a>
+            </li>
+          <li class="nav-item">
             <a class="nav-link " href="#contact" id="facebook"><img src="./img/facebook.png" height="25px" width="25px"></a>
           </li>
           <li class="nav-item">
@@ -70,7 +73,7 @@
   <header class="masthead">
     <div class="container">
         <div class="ad">
-      <video autoplay muted loop class="video-background" id="myVideo">
+      <video autoplay muted  class="video-background" id="myVideo">
         <source src="./img/media2.mp4" type="video/mp4">
       </video>
     </div>
@@ -130,8 +133,9 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12" style="color: white">
-          <img src="img/logo-life.png" class="paddingleft10px">
-          <img src="img/logo-bank.png" class="paddingleft10px">
+          <span class="copyright">© 2018 新光人壽 All Rights Reserved</span>
+          <span  ><img src="./img/apple.png" height="37px"></span>
+          <span  ><img src="./img/google.png" height="37px"></span>
         </div>
 
       </div>
@@ -160,6 +164,17 @@
             </div>
             <div class="hr-model"></div>
         </section>
+        <div class=" pl-5 pr-5">
+            <ul class="nav nav-tabs pb-1">
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="travel">新光人壽諮詢表單</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="hotel">新光銀行諮詢表單</a>
+              </li>
+  
+            </ul>
+          </div>
         <div class="row p-5">
           <div class="col-lg-12">
             <form id="contactForm" name="sentMessage" novalidate="novalidate">
@@ -244,26 +259,59 @@
               <!-- 說明-->
               <div class="col-md-12 p-3">
 
-               <P> 說明文字內容
-                  說明文字內容
-                  說明文字內容
-                  說明文字內容
-                  說明文字內容
-                  說明文字內容
-               </P>
+               <p> 
+                 極享旅遊體驗<br>
+                  探索世界無限可能<br>
+                  <br>
+                  訂製專屬旅遊行程及深度體驗，任意探索，馳騁遨遊全世界<br>
+                  邀請極享俱樂部會員及親友同遊，盡情享受，一同創造精彩回憶<br>
+                  
+               </p>
               </div>
 
               <!-- -->
               <div class="col-md-12">
-                <h3 style="text-align: left" class="mt-3 mb-3">標題</h3>
+                <h3 style="text-align: left" class="mt-3 mb-3">專屬旅遊</h3>
                 <div class="row">
 
                   <div class="col-md-12 portfolio-item" style="margin-bottom: 20px;">
-                    <img class="img-fluid img-hotel" src="img/Hotel/WHotels.jpg" alt="" style="margin-bottom: 20px;" >
+                   
+                      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                          <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                          </ol>
+                          <div class="carousel-inner">
+                            <div class="carousel-item active" style="height:300px">
+                              <img class="d-block w-100" src="./img/Hotel/米蘭.jpg" alt="First slide">
+                              <div class="carousel-caption d-none d-md-block">
+                                  <h5>2019米蘭時裝週十天遊 </h5>
+                                  <p>2月19日到2月28日</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height:300px">
+                              <img class="d-block w-100" src="./img/Hotel/Ritz.jpg" alt="Second slide">
+                            </div>
+                            <div class="carousel-item" style="height:300px">
+                              
+                              <img class="d-block w-100" src="./img/Hotel/StRegis.jpg" alt="Third slide">
+                            </div>
+                          </div>
+                          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                          </a>
+                        </div>
+                    
                     <div class="portfolio-caption">
                         <hr>
                    
-                        <p style="text-align: left; word-break: break-all" >文字內容</p>
+                        <p style="text-align: left; word-break: break-all" >每季推出季節性與獨特的旅程，讓會員可隨四季享受世界旅遊特色，悠遊於世界各種頂級獨特之行程。</p>
                       
                     </div>
                   </div>
@@ -274,15 +322,40 @@
               <!-- -->
               <!-- -->
               <div class="col-md-12">
-                  <h3 style="text-align: left" class="mt-3 mb-3">標題</h3>
+                  <h3 style="text-align: left" class="mt-3 mb-3">特殊體驗</h3>
                   <div class="row">
   
                     <div class="col-md-12   portfolio-item" style="margin-bottom: 20px;">
-                      <img class="img-fluid img-hotel" src="img/Hotel/WHotels.jpg" alt="" style="margin-bottom: 20px;">
+                   
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active" style="height:300px">
+                                <img class="d-block w-100" src="./img/Hotel/壽司.jpeg" alt="First slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 style="color:black"> 數寄屋橋次郎銀座本店</h5>
+                                    <p style="color:black">本店從 10 年前斬獲米其林三星</p>
+                                  </div>
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </div>
+                   
                       <div class="portfolio-caption">
                         <hr>
                    
-                        <p style="text-align: left; word-break: break-all" >文字內容</p>
+                        <p style="text-align: left; word-break: break-all" >每次的旅遊，增加短暫浸濡在地文化民情，讓自己的旅程以更深度、更彈性的方式，享受當次的假期</p>
                       
                       </div>
                     </div>
@@ -292,15 +365,41 @@
                 <!-- -->
                 <!-- -->
               <div class="col-md-12">
-                  <h3 style="text-align: left" class="mt-3 mb-3">標題</h3>
+                  <h3 style="text-align: left" class="mt-3 mb-3">主題講座</h3>
                   <div class="row">
   
                     <div class="col-md-12   portfolio-item" style="margin-bottom: 20px;">
-                      <img class="img-fluid img-hotel" src="img/Hotel/WHotels.jpg" alt="" style="margin-bottom: 20px;">
+
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active" style="height:300px">
+                                <img class="d-block w-100" src="./img/Hotel/酒.jpeg" alt="First slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>即興玩味餐酒會 </h5>
+                                    <p>法國路易老爺干邑VSOP</p>
+                                  </div>
+                              </div>
+                             
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </div>
+                     
                       <div class="portfolio-caption">
                           <hr>
                    
-                          <p style="text-align: left; word-break: break-all" >文字內容</p>
+                          <p style="text-align: left; word-break: break-all" >不定期舉辦留學教育說明會、世界知名酒莊品酒活動、參與特殊活動、展覽等活動</p>
                       
                       </div>
                     </div>
@@ -315,6 +414,19 @@
         </div>
         <!-- hotel-page -->
         <div id="hotel-page" style="display:none">
+
+            <!-- 說明-->
+            <div class="col-md-12 p-3">
+
+                <p> 
+                    奢華頂級酒店<br>
+                    享受尊榮禮遇服務<br>
+                    <br>
+                    精緻風味早餐，只為您，用心呈獻，自由沈浸於美好之晨<br>
+                    客房VIP升級 ‧ 提早入住 ‧ 延遲退房，延長獨享的尊榮時光<br>
+                    
+                </p>
+               </div>
           <!--logo-->
           <div class="container p-5">
             <div class="row">
@@ -706,6 +818,59 @@
 
 
   </div>
+  <!-- Model5-->
+  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+  
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 text-center">
+                <section class="p-0">
+                  <h2 class="section-heading text-uppercase">FAQ</h2>
+                  <!-- <h3 class="section-subheading text-muted mb-0">請詳讀活動辦法參加活動</h3> -->
+  
+                </section>
+     
+                <div class="hr-model"></div>
+                            <!-- Tab links -->
+  
+  
+                <!-- 活動頁面1-->
+                
+             <!-- 活動頁面2--> 
+             <div style="text-align: left"  class="p-5">
+  
+                <br> Merlin俱樂部條款及細則
+                <br> 由台灣新光銀行有限公司（「本行」或「新光銀行」）與貴為Merlin俱樂部客戶的您（「您」）訂立。
+                <br> A. 一般條款及細則
+                <br> 1) 本行根據此等條款及細則（「此等條款」）向您提供Merlin俱樂部服務。
+                <br> 尊尚禮遇
+                <br> 2) Merlin俱樂部是由新光金控向新光銀行財富管客戶提供的服務，並提升您的新光銀行財富管理理財服務。
+                <br> 4) 貴為Merlin俱樂部客戶，您可享受尊尚禮遇及特惠，包括由特選的生活體驗及禮賓服務供應商提供的服務及其他銀行、保險及財富管理產品及服務。可供您享用的產品、服務及尊尚禮遇的詳情載於Merlin俱樂部迎新手冊內，您可從專責為您服務的新光銀行理財顧問或從本行分行取得該迎新手冊。本行可不時更改、增加或撤銷任何此等產品、服務及尊尚禮遇。專責為您服務的新光銀行理財顧問亦會因應您的要求提供有關詳情。
+                <br>  5) 透過滙Merlin俱樂部提供的產品及服務的適用條款及細則及資格規定會在各項產品或服務的詳情中列出或說明。
+                <br> 6) 生活體驗及禮賓服務由經仔細挑選的第三方生活體驗及禮賓服務供應商（「生活體驗及禮賓服務合作夥伴」）所提供。您須先同意該生活體驗及禮賓服務合作夥伴的條款及細則，方可使用其提供的服務。對於生活體驗及禮賓服務合作夥伴提供的生活體驗及禮賓服務，或其失誤或未能妥善提供其服務，新光金控概不負責。
+                <br>  7) 本行可就產品及服務向Merlin俱樂部客戶提供特惠費用及收費，以及優惠條款及息率。請向專責為您服務的新光銀行理財顧問查詢現時向您提供的費用、收費、條款及息率的資料。
+                <br> 本行可不時更改此等費用、收費、條款及息率，本行會按產品及服務的適用條款及細則的要求或按法律要求向您發出通知。
+                
+                
+    
+                  </div>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+      </div>
+  
+  
+    </div>
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
