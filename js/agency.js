@@ -81,6 +81,29 @@
     $("#hotel-page").show()
   });
 
+
+  $( "#campaign1" ).click(function() { 
+    $("#campaign-page").show()
+    $("#campaign-page2").hide()
+    
+  } );
+  
+  $( "#campaign2" ).click(function() { 
+    $("#campaign-page").hide()
+    $("#campaign-page2").show()
+  });
+
+  $( "#calculation1" ).click(function() { 
+    $("#calculation-page").show()
+    $("#calculation-page2").hide()
+    
+  } );
+  
+  $( "#calculation2" ).click(function() { 
+    $("#calculation-page").hide()
+    $("#calculation-page2").show()
+  });
+
 })(jQuery); // End of use strict
 
 
