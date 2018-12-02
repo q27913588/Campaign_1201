@@ -12,9 +12,10 @@
     background: url("../img/hr.png") no-repeat center center;
     background-size: 1140px 13px;
     width: 1140px;
+    margin-bottom: 50px;
 }
 #services{
-    background: #212529
+    background: #181818
 }
 .img-square{
     width: 130px;
