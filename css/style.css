@@ -70,3 +70,10 @@
     width: 50%;
     border: 1px solid white;
 }
+.footer-logo{
+    color: white;
+    padding: 50px;
+    background: #2c3033;
+    border-radius: 12px;
+    margin-left: 5px;
+}
