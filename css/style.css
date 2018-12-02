@@ -15,7 +15,7 @@
     margin-bottom: 50px;
 }
 .ad{
-    min-height: 500px;
+    min-height: 460px;
     margin-top: 50px;
 }
 
@@ -37,4 +37,10 @@
 }
 .text-muted {
     color: #b78d3f!important
+}
+.button-background{
+    background: transparent;
+    border: 0px;
+    margin-left: 20px;
+    outline: none;
 }
