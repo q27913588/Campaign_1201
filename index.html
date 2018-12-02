@@ -9,7 +9,7 @@
   <meta name="author" content="">
 
   <title>Agency - Start Bootstrap Theme</title>
-<link href="css/style.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -21,7 +21,7 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
   <!-- Custom styles for this template -->
-  <link href="css/agency.css" rel="stylesheet">  
+  <link href="css/agency.css" rel="stylesheet">
 
 
 
@@ -42,20 +42,20 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
-       
+
           <li class="nav-item">
             <a class="nav-link " data-toggle="modal" href="#portfolioModal2">禮賓服務</a>
           </li>
-        
+
           <li class="nav-item">
             <a class="nav-link" href=" https://www.skl.com.tw/">資格試算</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" data-toggle="modal" href="#portfolioModal3">活動辦法</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-toggle="modal" href="#portfolioModal1">諮詢表單</a>
-              </li>
+            <a class="nav-link" data-toggle="modal" href="#portfolioModal3">活動辦法</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="modal" href="#portfolioModal1">諮詢表單</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link " href="#contact" id="facebook"><img src="./img/facebook.png" height="25px" width="25px"></a>
           </li>
@@ -87,12 +87,14 @@
   <!-- Services -->
   <section id="services">
     <div class="container">
-     <div class="row">
+      <div class="row">
         <div class="col-lg-12 text-center">
+            <button id="play" type="button">Play Video</button>
+            <button  id="pause"  type="button">Pause Video</button><br> 
           <h2 class="section-heading text-uppercase">客戶回饋</h2>
           <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
         </div>
-         <div class="hr"></div>
+        <div class="hr"></div>
       </div>
       <div class="row text-center">
         <div class="col-md-4">
@@ -141,58 +143,206 @@
   <!-- Modal 1 -->
   <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content"  >
+      <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
           <div class="lr">
             <div class="rl"></div>
           </div>
         </div>
         <section class="p-0">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 text-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 text-center">
                 <h2 class="section-heading text-uppercase">諮詢表單</h2>
-              <h3 class="section-subheading text-muted m-0">
+                <h3 class="section-subheading text-muted m-0">
                   Participate in the true feedback of our honorable tourism</h3>
+              </div>
+            </div>
+            <div class="hr-model"></div>
+        </section>
+        <div class="row p-5">
+          <div class="col-lg-12">
+            <form id="contactForm" name="sentMessage" novalidate="novalidate">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input class="form-control" id="name" type="text" placeholder="請輸入您的姓名" required="required"
+                      data-validation-required-message="請輸入您的姓名">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="email" type="email" placeholder="請輸入您的電話" required="required"
+                      data-validation-required-message="請輸入您的電話">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="phone" type="tel" placeholder="請輸入您的手機" required="required"
+                      data-validation-required-message="請輸入您的手機">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <textarea style="    height: 171px;" class="form-control" id="message" placeholder="請輸入諮詢內容"
+                      required="required" data-validation-required-message="請輸入諮詢內容"></textarea>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-lg-12 text-center">
+                  <div id="success"></div>
+                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" style="background-color: #e9c47d"
+                    type="submit">送出資訊</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+  <!--Model 2-->
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+
+        <!--img-->
+        <section class="p-0">
+          <div class="container">
+
+            <div class="col-lg-12 text-center">
+              <h2 class="section-heading text-uppercase">禮賓服務</h2>
+              <h3 class="section-subheading text-muted m-0">最尊榮的禮遇與享受</h3>
             </div>
           </div>
           <div class="hr-model"></div>
-          </section>
-          <div class="row p-5" >
-            <div class="col-lg-12">
-              <form id="contactForm" name="sentMessage" novalidate="novalidate">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <input class="form-control" id="name" type="text" placeholder="請輸入您的姓名" required="required"
-                        data-validation-required-message="請輸入您的姓名">
-                      <p class="help-block text-danger"></p>
-                    </div>
-                    <div class="form-group">
-                      <input class="form-control" id="email" type="email" placeholder="請輸入您的電話" required="required"
-                        data-validation-required-message="請輸入您的電話">
-                      <p class="help-block text-danger"></p>
-                    </div>
-                    <div class="form-group">
-                      <input class="form-control" id="phone" type="tel" placeholder="請輸入您的手機" required="required"
-                        data-validation-required-message="請輸入您的手機">
-                      <p class="help-block text-danger"></p>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <textarea style="    height: 171px;" class="form-control" id="message" placeholder="請輸入諮詢內容"
-                        required="required" data-validation-required-message="請輸入諮詢內容"></textarea>
-                      <p class="help-block text-danger"></p>
-                    </div>
-                  </div>
-                  <div class="clearfix"></div>
-                  <div class="col-lg-12 text-center">
-                    <div id="success"></div>
-                    <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" style="background-color: #e9c47d"type="submit">送出資訊</button>
-                  </div>
-                </div>
-              </form>
+        </section>
+        <!-- Tab links -->
+        <ul class="nav nav-tabs pb-1">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">旅遊</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">飯店</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+        <!-- -->
+        <div class="p-5">
+
+
+
+          <div class="row">
+
+            <div class="col-md-4 col-sm-6 portfolio-item" style="margin-bottom: 20px;">
+              <img class="img-fluid img-hotel" src="img/Hotel/WHotels.jpg" alt="" style="margin-bottom: 20px;">
+              <div class="portfolio-caption">
+                <h4>W Hotels</h4>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 portfolio-item" style="margin-bottom: 20px;">
+              <img class="img-fluid img-hotel" src="img/Hotel/StRegis.jpg" alt="" style="margin-bottom: 20px;">
+              <div class="portfolio-caption">
+                <h4>StRegis</h4>
+
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 portfolio-item" style="margin-bottom: 20px;">
+              <img class="img-fluid img-hotel" src="img/Hotel//Shangri.jpg" alt="" style="margin-bottom: 20px;">
+              <div class="portfolio-caption">
+                <h4>Shangri</h4>
+
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 portfolio-item" style="margin-bottom: 20px;">
+
+              <img class="img-fluid img-hotel" src="img/Hotel/Ritz.jpg" alt="" style="margin-bottom: 20px;">
+
+              <div class="portfolio-caption">
+                <h4>Ritz</h4>
+
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 portfolio-item" style="margin-bottom: 20px;">
+              <img class="img-fluid img-hotel" src="img/Hotel/Luxury.jpg" alt="" style="margin-bottom: 20px;">
+              <div class="portfolio-caption">
+                <h4>Luxury</h4>
+
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item" style="margin-bottom: 20px;">
+              <img class="img-fluid img-hotel" src="img/Hotel/Aman.jpg" alt="" style="margin-bottom: 20px;">
+              <div class="portfolio-caption">
+                <h4>Aman</h4>
+
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+        <!--logo-->
+        <div class="container p-5">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <a href="#" class="img-hotel-logo">
+                <img class="img-fluid d-block mx-auto" src="img/Hotel/切片.png" alt="" width="100%">
+              </a>
+
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <a href="#" class="img-hotel-logo">
+                <img class="img-fluid d-block mx-auto" src="img/Hotel/切片 8.png" alt="" width="100%">
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <a href="#">
+                <img class="img-fluid d-block mx-auto" src="img/Hotel/切片 7.png" alt="" width="100%">
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <a href="#">
+                <img class="img-fluid d-block mx-auto  img-hotel-logo" src="img/Hotel/切片 6.png" alt="">
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <a href="#">
+                <img class="img-fluid d-block mx-auto  img-hotel-logo" src="img/Hotel/切片 5.png" alt="">
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <a href="#">
+                <img class="img-fluid d-block mx-auto  img-hotel-logo" src="img/Hotel/切片 4.png" alt="">
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <a href="#">
+                <img class="img-fluid d-block mx-auto  img-hotel-logo" src="img/Hotel/切片 3.png" alt="">
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <a href="#">
+                <img class="img-fluid d-block mx-auto  img-hotel-logo" src="img/Hotel/切片 2.png" alt="">
+              </a>
             </div>
           </div>
         </div>
@@ -200,137 +350,6 @@
       </div>
     </div>
   </div>
-
-  <!--Model 2-->
-  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content" >
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-
-           <!--img-->
-           <section class="p-0">
-          <div class="container">
-     
-              <div class="col-lg-12 text-center">
-                <h2 class="section-heading text-uppercase">禮賓服務</h2>
-                <h3 class="section-subheading text-muted m-0">最尊榮的禮遇與享受</h3>
-              </div>
-            </div>
-            <div class="hr-model"></div>
-            </section>
-<!-- Tab links -->
-
-  <!-- -->
-            <div class="p-5">
-            <div class="row">
-
-              <div class="col-md-4 col-sm-6 portfolio-item" style="margin-bottom: 20px;">
-                <img class="img-fluid img-hotel" src="img/Hotel/WHotels.jpg" alt="" style="margin-bottom: 20px;">
-                <div class="portfolio-caption">
-                  <h4>W Hotels</h4>
-                </div>
-              </div>
-
-              <div class="col-md-4 col-sm-6 portfolio-item" style="margin-bottom: 20px;">
-                <img class="img-fluid img-hotel" src="img/Hotel/StRegis.jpg" alt="" style="margin-bottom: 20px;">
-                <div class="portfolio-caption">
-                  <h4>StRegis</h4>
-
-                </div>
-              </div>
-
-              <div class="col-md-4 col-sm-6 portfolio-item" style="margin-bottom: 20px;">
-                <img class="img-fluid img-hotel" src="img/Hotel//Shangri.jpg" alt="" style="margin-bottom: 20px;">
-                <div class="portfolio-caption">
-                  <h4>Shangri</h4>
-
-                </div>
-              </div>
-
-              <div class="col-md-4 col-sm-6 portfolio-item" style="margin-bottom: 20px;">
-
-                <img class="img-fluid img-hotel" src="img/Hotel/Ritz.jpg" alt="" style="margin-bottom: 20px;">
-
-                <div class="portfolio-caption">
-                  <h4>Ritz</h4>
-
-                </div>
-              </div>
-
-              <div class="col-md-4 col-sm-6 portfolio-item" style="margin-bottom: 20px;">
-                <img class="img-fluid img-hotel" src="img/Hotel/Luxury.jpg" alt="" style="margin-bottom: 20px;">
-                <div class="portfolio-caption">
-                  <h4>Luxury</h4>
-
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6 portfolio-item" style="margin-bottom: 20px;">
-                <img class="img-fluid img-hotel" src="img/Hotel/Aman.jpg" alt="" style="margin-bottom: 20px;">
-                <div class="portfolio-caption">
-                  <h4>Aman</h4>
-
-                </div>
-              </div>
-
-
-
-            </div>
-          </div>
-          <!--logo-->
-          <div class="container p-5">
-            <div class="row">
-              <div class="col-md-3 col-sm-6">
-                <a href="#" class="img-hotel-logo">
-                  <img class="img-fluid d-block mx-auto" src="img/Hotel/切片.png" alt="" width="100%">
-                </a>
-                
-              </div>
-
-              <div class="col-md-3 col-sm-6">
-                <a href="#" class="img-hotel-logo" >
-                  <img class="img-fluid d-block mx-auto" src="img/Hotel/切片 8.png" alt="" width="100%">
-                </a>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <a href="#">
-                  <img class="img-fluid d-block mx-auto" src="img/Hotel/切片 7.png" alt="" width="100%">
-                </a>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <a href="#">
-                  <img class="img-fluid d-block mx-auto  img-hotel-logo" src="img/Hotel/切片 6.png" alt="">
-                </a>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <a href="#">
-                  <img class="img-fluid d-block mx-auto  img-hotel-logo" src="img/Hotel/切片 5.png" alt="">
-                </a>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <a href="#">
-                  <img class="img-fluid d-block mx-auto  img-hotel-logo" src="img/Hotel/切片 4.png" alt="">
-                </a>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <a href="#">
-                  <img class="img-fluid d-block mx-auto  img-hotel-logo" src="img/Hotel/切片 3.png" alt="">
-                </a>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <a href="#">
-                  <img class="img-fluid d-block mx-auto  img-hotel-logo" src="img/Hotel/切片 2.png" alt="">
-                </a>
-              </div>
-            </div>
-          </div>
-       
-        </div>
-      </div>
-    </div>
   </div>
   <!-- Model3-->
   <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
@@ -345,12 +364,12 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-12 text-center">
-                 <section class="p-0">
-              <h2 class="section-heading text-uppercase">活動辦法</h2>
-              <h3 class="section-subheading text-muted mb-0">請詳讀活動辦法參加活動</h3>
-             
-            </section>
-            <div class="hr-model"></div>
+              <section class="p-0">
+                <h2 class="section-heading text-uppercase">活動辦法</h2>
+                <h3 class="section-subheading text-muted mb-0">請詳讀活動辦法參加活動</h3>
+
+              </section>
+              <div class="hr-model"></div>
               <div style="text-align: left" class="p-5">
 
                 <strong>★首次登入 双重禮 2》肯德基 冬日獨響套餐58折優惠券
@@ -383,11 +402,11 @@
 
       </div>
     </div>
-  
-       
+
+
   </div>
   <!-- diolog-->
- 
+
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

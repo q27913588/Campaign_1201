@@ -58,6 +58,19 @@
   });
   
   
+
+  $( "#play" ).click(function() { 
+    console.log("sss");
+    var vid = document.getElementById("myVideo"); 
+      vid.play(); 
+  } );
+  
+  $( "#pause" ).click(function() { 
+    var vid = document.getElementById("myVideo"); 
+      vid.pause(); 
+  });
+
+
 })(jQuery); // End of use strict
 
 
