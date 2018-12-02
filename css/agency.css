@@ -18,7 +18,7 @@ a {
 }
 
 a:hover {
-  color: #fec503;
+  color: #e9c47d;
 }
 
 .text-primary {
@@ -129,7 +129,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: #fec503;
+  color: #e9c47d;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -744,3 +744,12 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
     z-index: 1;
   }
   
+
+  .img-hotel{
+    height: 200px;
+    width: 100%;
+  }
+  .img-hotel-logo{
+    height: 200px;
+    width: 200px;
+  }
