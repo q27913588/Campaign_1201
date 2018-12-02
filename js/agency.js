@@ -70,13 +70,14 @@
       vid.pause(); 
   });
 
-  $( "#travel" ).click(function() { 
+  $( "#travel1" ).click(function() { 
+    console.log("click");
     $("#travel-page").show()
     $("#hotel-page").hide()
     
   } );
   
-  $( "#hotel" ).click(function() { 
+  $( "#hotel1" ).click(function() { 
     $("#travel-page").hide()
     $("#hotel-page").show()
   });
