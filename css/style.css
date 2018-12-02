@@ -2,10 +2,10 @@
     font-family:Microsoft JhengHei, "微軟正黑體", LiHei Pro, "儷黑體", PMingLiu,"新細明體", sans-serif;
 }
 .logo{
-     height: 70px;
+     height: 25px;
     background: url("../img/logo.png") no-repeat center center;
-    background-size: 333px 30px;
-    width: 333px;
+    background-size: 275px 25px;
+    width: 275px;
 }
 .hr{
      height: 13px;
