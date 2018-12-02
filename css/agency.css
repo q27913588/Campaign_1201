@@ -709,7 +709,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   header {
     position: relative;
     background-color: black;
-    height: 85vh;
+    height: 105vh;
     min-height: 25rem;
     width: 100%;
     overflow: hidden;
