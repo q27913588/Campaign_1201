@@ -47,4 +47,16 @@
     $('.navbar').removeClass('d-none');
   })
 
+
+
+  $( "#facebook" ).click(function() {
+    alert("已為您分享至FaceBook");
+  });
+
+  $( "#line" ).click(function() {
+    alert("已為您分享至Line");
+  });
+  
 })(jQuery); // End of use strict
+
+

@@ -46,7 +46,7 @@
             <a class="nav-link" data-toggle="modal" href="#portfolioModal3">活動辦法</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " data-toggle="modal" href="#portfolioModal2">飯店介紹</a>
+            <a class="nav-link " data-toggle="modal" href="#portfolioModal2">酒店集團</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="modal" href="#portfolioModal1">諮詢表單</a>
@@ -55,11 +55,11 @@
             <a class="nav-link" href=" https://www.skl.com.tw/">資格試算</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="#contact"><img src="./img/facebook.png" height="25px" width="25px"></a>
+            <a class="nav-link " href="#contact" id="facebook"><img src="./img/facebook.png" height="25px" width="25px"></a>
           </li>
           <li class="nav-item">
-              <a class="nav-link " href="#contact"><img src="./img/line.png" height="25px" width="25px"></a>
-            </li>
+            <a class="nav-link " href="#contact" id="line"><img src="./img/line.png" height="25px" width="25px"></a>
+          </li>
         </ul>
       </div>
     </div>
@@ -150,37 +150,41 @@
           <div class="row">
             <div class="col-lg-12 text-center">
               <h2 class="section-heading text-uppercase">諮詢表單</h2>
-              <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+              <h3 class="section-subheading text-muted">歡迎提供任何問題意見</h3>
             </div>
           </div>
-          <div class="row">
+          <div class="row p-5" >
             <div class="col-lg-12">
               <form id="contactForm" name="sentMessage" novalidate="novalidate">
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">
-                      <input class="form-control" id="name" type="text" placeholder="請輸入您的姓名" required="required" data-validation-required-message="請輸入您的姓名">
+                      <input class="form-control" id="name" type="text" placeholder="請輸入您的姓名" required="required"
+                        data-validation-required-message="請輸入您的姓名">
                       <p class="help-block text-danger"></p>
                     </div>
                     <div class="form-group">
-                      <input class="form-control" id="email" type="email" placeholder="請輸入您的電話" required="required" data-validation-required-message="請輸入您的電話">
+                      <input class="form-control" id="email" type="email" placeholder="請輸入您的電話" required="required"
+                        data-validation-required-message="請輸入您的電話">
                       <p class="help-block text-danger"></p>
                     </div>
                     <div class="form-group">
-                      <input class="form-control" id="phone" type="tel" placeholder="請輸入您的手機" required="required" data-validation-required-message="請輸入您的手機">
+                      <input class="form-control" id="phone" type="tel" placeholder="請輸入您的手機" required="required"
+                        data-validation-required-message="請輸入您的手機">
                       <p class="help-block text-danger"></p>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-group">
-                      <textarea style="    height: 171px;" class="form-control" id="message" placeholder="請輸入諮詢內容" required="required" data-validation-required-message="請輸入諮詢內容"></textarea>
+                      <textarea style="    height: 171px;" class="form-control" id="message" placeholder="請輸入諮詢內容"
+                        required="required" data-validation-required-message="請輸入諮詢內容"></textarea>
                       <p class="help-block text-danger"></p>
                     </div>
                   </div>
                   <div class="clearfix"></div>
                   <div class="col-lg-12 text-center">
                     <div id="success"></div>
-                    <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">送出資訊</button>
+                    <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" style="background-color: #e9c47d"type="submit">送出資訊</button>
                   </div>
                 </div>
               </form>
@@ -195,7 +199,7 @@
   <!--Model 2-->
   <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content" style="    padding-bottom: 200px;  ">
+      <div class="modal-content" >
         <div class="close-modal" data-dismiss="modal">
           <div class="lr">
             <div class="rl"></div>
@@ -206,57 +210,59 @@
           <!--img-->
           <div class="container">
             <div class="row">
+
               <div class="col-lg-12 text-center">
-                <h2 class="section-heading text-uppercase">Portfolio</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <h2 class="section-heading text-uppercase">酒店集團</h2>
+                <h3 class="section-subheading text-muted">最尊榮的禮遇與享受</h3>
               </div>
             </div>
             <div class="row">
 
-              <div class="col-md-4 col-sm-6 portfolio-item">
-                <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+              <div class="col-md-4 col-sm-6 portfolio-item" style="margin-bottom: 20px;">
+                <img class="img-fluid img-hotel" src="img/Hotel/WHotels.jpg" alt="" style="margin-bottom: 20px;">
                 <div class="portfolio-caption">
-                  <h4>Threads</h4>
-                  <p class="text-muted">Illustration</p>
+                  <h4>W Hotels</h4>
                 </div>
               </div>
 
-              <div class="col-md-4 col-sm-6 portfolio-item">
-                <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+              <div class="col-md-4 col-sm-6 portfolio-item" style="margin-bottom: 20px;">
+                <img class="img-fluid img-hotel" src="img/Hotel/StRegis.jpg" alt="" style="margin-bottom: 20px;">
                 <div class="portfolio-caption">
-                  <h4>Threads</h4>
-                  <p class="text-muted">Illustration</p>
+                  <h4>StRegis</h4>
+
                 </div>
               </div>
 
-              <div class="col-md-4 col-sm-6 portfolio-item">
-                <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+              <div class="col-md-4 col-sm-6 portfolio-item" style="margin-bottom: 20px;">
+                <img class="img-fluid img-hotel" src="img/Hotel//Shangri.jpg" alt="" style="margin-bottom: 20px;">
                 <div class="portfolio-caption">
-                  <h4>Threads</h4>
-                  <p class="text-muted">Illustration</p>
+                  <h4>Shangri</h4>
+
                 </div>
               </div>
 
-              <div class="col-md-4 col-sm-6 portfolio-item">
-                <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+              <div class="col-md-4 col-sm-6 portfolio-item" style="margin-bottom: 20px;">
+
+                <img class="img-fluid img-hotel" src="img/Hotel/Ritz.jpg" alt="" style="margin-bottom: 20px;">
+
                 <div class="portfolio-caption">
-                  <h4>Threads</h4>
-                  <p class="text-muted">Illustration</p>
+                  <h4>Ritz</h4>
+
                 </div>
               </div>
 
-              <div class="col-md-4 col-sm-6 portfolio-item">
-                <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+              <div class="col-md-4 col-sm-6 portfolio-item" style="margin-bottom: 20px;">
+                <img class="img-fluid img-hotel" src="img/Hotel/Luxury.jpg" alt="" style="margin-bottom: 20px;">
                 <div class="portfolio-caption">
-                  <h4>Threads</h4>
-                  <p class="text-muted">Illustration</p>
+                  <h4>Luxury</h4>
+
                 </div>
               </div>
-              <div class="col-md-4 col-sm-6 portfolio-item">
-                <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+              <div class="col-md-4 col-sm-6 portfolio-item" style="margin-bottom: 20px;">
+                <img class="img-fluid img-hotel" src="img/Hotel/Aman.jpg" alt="" style="margin-bottom: 20px;">
                 <div class="portfolio-caption">
-                  <h4>Threads</h4>
-                  <p class="text-muted">Illustration</p>
+                  <h4>Aman</h4>
+
                 </div>
               </div>
 
@@ -268,23 +274,43 @@
           <div class="container">
             <div class="row">
               <div class="col-md-3 col-sm-6">
-                <a href="#">
-                  <img class="img-fluid d-block mx-auto" src="img/logos/envato.jpg" alt="">
+                <a href="#" class="img-hotel-logo">
+                  <img class="img-fluid d-block mx-auto" src="img/Hotel/切片.png" alt="" width="100%">
+                </a>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <a href="#" class="img-hotel-logo" >
+                  <img class="img-fluid d-block mx-auto" src="img/Hotel/切片 8.png" alt="" width="100%">
                 </a>
               </div>
               <div class="col-md-3 col-sm-6">
                 <a href="#">
-                  <img class="img-fluid d-block mx-auto" src="img/logos/designmodo.jpg" alt="">
+                  <img class="img-fluid d-block mx-auto" src="img/Hotel/切片 7.png" alt="" width="100%">
                 </a>
               </div>
               <div class="col-md-3 col-sm-6">
                 <a href="#">
-                  <img class="img-fluid d-block mx-auto" src="img/logos/themeforest.jpg" alt="">
+                  <img class="img-fluid d-block mx-auto  img-hotel-logo" src="img/Hotel/切片 6.png" alt="">
                 </a>
               </div>
               <div class="col-md-3 col-sm-6">
                 <a href="#">
-                  <img class="img-fluid d-block mx-auto" src="img/logos/creative-market.jpg" alt="">
+                  <img class="img-fluid d-block mx-auto  img-hotel-logo" src="img/Hotel/切片 5.png" alt="">
+                </a>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <a href="#">
+                  <img class="img-fluid d-block mx-auto  img-hotel-logo" src="img/Hotel/切片 4.png" alt="">
+                </a>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <a href="#">
+                  <img class="img-fluid d-block mx-auto  img-hotel-logo" src="img/Hotel/切片 3.png" alt="">
+                </a>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <a href="#">
+                  <img class="img-fluid d-block mx-auto  img-hotel-logo" src="img/Hotel/切片 2.png" alt="">
                 </a>
               </div>
             </div>
@@ -297,7 +323,7 @@
   <!-- Model3-->
   <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content"  >
+      <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
           <div class="lr">
             <div class="rl"></div>
@@ -310,7 +336,7 @@
               <h2 class="section-heading text-uppercase">活動辦法</h2>
               <h3 class="section-subheading text-muted">請詳讀活動辦法參加活動</h3>
               <div style="text-align: left" class="p-5">
-              
+
                 <strong>★首次登入 双重禮 2》肯德基 冬日獨響套餐58折優惠券
                   <br>經典美味 輕鬆品味</strong>
                 <br>
@@ -332,7 +358,7 @@
                 <div class="sale-cont-time">
                   活動期間： 民國 107 年 12 月 01 日 至 民國 108 年 02 月 28 日
                 </div>
-            
+
               </div>
             </div>
           </div>
@@ -341,7 +367,11 @@
 
       </div>
     </div>
+  
+       
   </div>
+  <!-- diolog-->
+ 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -354,7 +384,7 @@
   <script src="js/contact_me.js"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="js/agency.min.js"></script>
+  <script src="js/agency.js"></script>
 
 </body>
 
