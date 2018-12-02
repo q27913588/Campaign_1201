@@ -7,6 +7,13 @@
     background-size: 275px 25px;
     width: 275px;
 }
+@media (max-width:767px) {
+.logo{
+    height: 20px;
+   background: url("../img/logo.png") no-repeat center center;
+   background-size: 220px 20px;
+   width: 220px;
+}}
 .hr{
      height: 13px;
     background: url("../img/hr.png") no-repeat center center;
@@ -43,4 +50,23 @@
     border: 0px;
     margin-left: 20px;
     outline: none;
+}
+.paddingleft10px{
+    padding-left:10px;
+}
+
+.nav-tabs .nav-link {
+    background-color: #c9c19e;
+    color: white;
+    border-top-left-radius: .0rem; 
+    border-top-right-radius: 0rem;
+}
+.nav-tabs .nav-link:hover {
+    background-color: #c9c19e;
+    color: #9b5b00;
+}
+.nav-tabs .nav-item {
+    margin-bottom: -1px;
+    width: 50%;
+    border: 1px solid white;
 }
