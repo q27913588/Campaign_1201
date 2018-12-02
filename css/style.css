@@ -1,0 +1,26 @@
+*{
+    font-family:Microsoft JhengHei, "微軟正黑體", LiHei Pro, "儷黑體", PMingLiu,"新細明體", sans-serif;
+}
+.logo{
+     height: 70px;
+    background: url("../img/logo.png") no-repeat center center;
+    background-size: 333px 30px;
+    width: 333px;
+}
+.hr{
+     height: 13px;
+    background: url("../img/hr.png") no-repeat center center;
+    background-size: 1140px 13px;
+    width: 1140px;
+}
+#services{
+    background: #212529
+}
+.img-square{
+    width: 130px;
+    border-radius: 50%;
+    border: 1px solid rgb(45, 49, 52);
+}
+.text-muted {
+    color: #b78d3f!important
+}
